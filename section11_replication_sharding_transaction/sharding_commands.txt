@@ -1,0 +1,97 @@
+# 1.Configure folders
+mkdir config/configdb0
+mkdir config/configdb1
+mkdir config/configdb2
+
+mkdir srx1/db0
+mkdir srx1/db1
+mkdir srx1/db2
+
+mkdir srx2/db0
+mkdir srx2/db1
+mkdir srx2/db2
+
+mkdir srx3/db0
+mkdir srx3/db1
+mkdir srx3/db2
+
+
+# 2. Start & initiate config instances
+mongod --configsvr --dbpath config/configdb0 --port 26000 --replSet cfg
+mongod --configsvr --dbpath config/configdb1 --port 26001 --replSet cfg
+mongod --configsvr --dbpath config/configdb2 --port 26002 --replSet cfg
+
+
+mongosh --port 26000
+rs.initiate()
+
+# add config server
+rs.add("localhost:26001")
+rs.add("localhost:26002")
+
+rs.status()
+
+
+
+# 3. Start & initiate Shard intances
+
+mongod --shardsvr --replSet srx1 --port 10000 --dbpath srx1/db0
+mongod --shardsvr --replSet srx1 --port 10001 --dbpath srx1/db1
+mongod --shardsvr --replSet srx1 --port 10002 --dbpath srx1/db2
+
+
+mongosh --port 10000
+rs.initiate()
+rs.add("localhost:10001")
+rs.add("localhost:10002")
+
+
+
+mongod --shardsvr --replSet srx2 --port 20000 --dbpath srx2/db0
+mongod --shardsvr --replSet srx2 --port 20001 --dbpath srx2/db1
+mongod --shardsvr --replSet srx2 --port 20002 --dbpath srx2/db2
+
+mongosh --port 20000
+rs.initiate()
+rs.add("localhost:20001")
+rs.add("localhost:20002")
+
+
+
+mongod --shardsvr --replSet srx3 --port 30000 --dbpath srx3/db0
+mongod --shardsvr --replSet srx3 --port 30001 --dbpath srx3/db1
+mongod --shardsvr --replSet srx3 --port 30002 --dbpath srx3/db2
+
+mongosh --port 30000
+rs.initiate()
+rs.add("localhost:30001")
+rs.add("localhost:30002")
+
+
+
+# 4. Start mongos(router) intance
+mongos --configdb "cfg/localhost:26000,localhost:26001,localhost:26002" --logpath log.mongos1 --port 25000 
+
+
+# 5. Connect to mongos & Add Shards
+mongosh --port 25000
+
+sh.addShard("srx1/localhost:10000")
+sh.addShard("srx2/localhost:20000")
+sh.addShard("srx3/localhost:30000")
+
+sh.status()
+
+use config;
+db.shards.find();
+
+sh.enableSharding("mydb")
+sh.status()
+
+sh.shardCollection("mydb.products", {_id: 1})
+
+use mydb;
+for(i=0;i<1000;i++) {db.products.insertOne({"title":"test", value:i})}
+
+db.products.getShardDistribution()
+

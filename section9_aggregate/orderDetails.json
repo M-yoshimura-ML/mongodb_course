@@ -1,0 +1,73 @@
+[
+  {
+    "orderID": "1001",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "zipCode": "10001"
+    },
+    "orderDate": "2023-07-01",
+    "deliveryDate": "2023-07-05",
+    "additionalFee": [
+      { "deliveryFee": 10 },
+      { "tax": 5 }
+    ]
+  },
+  {
+    "orderID": "1002",
+    "address": {
+      "street": "456 Park Ave",
+      "city": "Los Angeles",
+      "zipCode": "90001"
+    },
+    "orderDate": "2023-07-01",
+    "deliveryDate": "2023-07-06",
+    "additionalFee": [
+      { "deliveryFee": 12 },
+      { "tax": 6 }
+    ]
+  },
+  {
+    "orderID": "1003",
+    "address": {
+      "street": "789 Oak Rd",
+      "city": "Chicago",
+      "zipCode": "60601"
+    },
+    "orderDate": "2023-07-03",
+    "deliveryDate": "2023-07-07",
+    "additionalFee": [
+      { "deliveryFee": 15 },
+      { "tax": 7 }
+    ]
+  },
+  {
+    "orderID": "1004",
+    "address": {
+      "street": "234 Maple St",
+      "city": "Houston",
+      "zipCode": "77001"
+    },
+    "orderDate": "2023-07-04",
+    "deliveryDate": "2023-07-08",
+    "additionalFee": [
+      { "deliveryFee": 8 },
+      { "tax": 4 }
+    ]
+  },
+  {
+    "orderID": "1005",
+    "address": {
+      "street": "567 Pine Ave",
+      "city": "Seattle",
+      "zipCode": "98101"
+    },
+    "orderDate": "2023-07-04",
+    "deliveryDate": "2023-07-09",
+    "additionalFee": [
+      { "deliveryFee": 9 },
+      { "tax": 4 }
+    ]
+  }
+]
+

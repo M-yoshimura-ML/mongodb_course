@@ -1,0 +1,254 @@
+[
+  {
+    "name": "John Doe",
+    "age": 30,
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "zipCode": "10001"
+    },
+    "contact": {
+      "email": "john.doe@example.com",
+      "phone": "+1 (555) 123-4567"
+    },
+    "hobbies": ["Reading", "Traveling", "Photography"],
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "major": "Computer Science",
+        "university": "ABC University",
+        "year": 2014
+      },
+      {
+        "degree": "Master of Business Administration",
+        "major": "Business Management",
+        "university": "XYZ University",
+        "year": 2017
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "TechCo",
+        "position": "Software Engineer",
+        "duration": 3,
+        "salary": 75000
+      },
+      {
+        "company": "Growth Corp",
+        "position": "Product Manager",
+        "duration": 2,
+        "salary": 90000
+      }
+    ]
+  },
+  {
+    "name": "Jane Smith",
+    "age": 28,
+    "address": {
+      "street": "456 Park Ave",
+      "city": "Los Angeles",
+      "zipCode": "90001"
+    },
+    "contact": {
+      "email": "jane.smith@example.com",
+      "phone": "+1 (555) 987-6543"
+    },
+    "hobbies": ["Painting", "Hiking", "Cooking"],
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "major": "Fine Arts",
+        "university": "PQR College",
+        "year": 2016
+      },
+      {
+        "degree": "Master of Education",
+        "major": "Educational Leadership",
+        "university": "LMN University",
+        "year": 2019
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "Creative Studios",
+        "position": "Graphic Designer",
+        "duration": 4,
+        "salary": 60000
+      },
+      {
+        "company": "Local School District",
+        "position": "Assistant Principal",
+        "duration": 3,
+        "salary": 80000
+      }
+    ]
+  },
+  {
+    "name": "Michael Johnson",
+    "age": 35,
+    "address": {
+      "street": "789 Oak Rd",
+      "city": "Chicago",
+      "zipCode": "60601"
+    },
+    "contact": {
+      "email": "michael.johnson@example.com",
+      "phone": "+1 (555) 222-3333"
+    },
+    "hobbies": ["Soccer", "Music", "Gardening"],
+    "education": [
+      {
+        "degree": "Bachelor of Engineering",
+        "major": "Mechanical Engineering",
+        "university": "LMN University",
+        "year": 2009
+      },
+      {
+        "degree": "Master of Science",
+        "major": "Business Administration",
+        "university": "XYZ University",
+        "year": 2012
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "Mechanical Solutions",
+        "position": "Mechanical Engineer",
+        "duration": 6,
+        "salary": 80000
+      },
+      {
+        "company": "Global Corp",
+        "position": "Operations Manager",
+        "duration": 5,
+        "salary": 100000
+      }
+    ]
+  },
+  {
+    "name": "Emily Johnson",
+    "age": 29,
+    "address": {
+      "street": "789 Elm St",
+      "city": "San Francisco",
+      "zipCode": "94101"
+    },
+    "contact": {
+      "email": "emily.johnson@example.com",
+      "phone": "+1 (555) 444-7777"
+    },
+    "hobbies": ["Yoga", "Reading", "Cooking"],
+    "education": [
+      {
+        "degree": "Bachelor of Science",
+        "major": "Biology",
+        "university": "LMN University",
+        "year": 2015
+      },
+      {
+        "degree": "Master of Public Health",
+        "major": "Health Administration",
+        "university": "ABC University",
+        "year": 2018
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "Healthcare Solutions",
+        "position": "Research Analyst",
+        "duration": 4,
+        "salary": 65000
+      },
+      {
+        "company": "Community Health Center",
+        "position": "Program Manager",
+        "duration": 3,
+        "salary": 75000
+      }
+    ]
+  },
+  {
+    "name": "William Brown",
+    "age": 32,
+    "address": {
+      "street": "567 Pine Ave",
+      "city": "Seattle",
+      "zipCode": "98101"
+    },
+    "contact": {
+      "email": "william.brown@example.com",
+      "phone": "+1 (555) 111-2222"
+    },
+    "hobbies": ["Photography", "Traveling", "Guitar"],
+    "education": [
+      {
+        "degree": "Bachelor of Arts",
+        "major": "History",
+        "university": "PQR College",
+        "year": 2011
+      },
+      {
+        "degree": "Master of Library Science",
+        "major": "Library and Information Studies",
+        "university": "DEF University",
+        "year": 2013
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "Museum of History",
+        "position": "Curator",
+        "duration": 5,
+        "salary": 70000
+      },
+      {
+        "company": "City Library",
+        "position": "Head Librarian",
+        "duration": 6,
+        "salary": 85000
+      }
+    ]
+  },
+  {
+    "name": "Sophia Williams",
+    "age": 27,
+    "address": {
+      "street": "234 Maple St",
+      "city": "Houston",
+      "zipCode": "77001"
+    },
+    "contact": {
+      "email": "sophia.williams@example.com",
+      "phone": "+1 (555) 333-8888"
+    },
+    "hobbies": ["Dancing", "Painting", "Singing"],
+    "education": [
+      {
+        "degree": "Bachelor of Fine Arts",
+        "major": "Performing Arts",
+        "university": "XYZ University",
+        "year": 2016
+      },
+      {
+        "degree": "Master of Music",
+        "major": "Vocal Performance",
+        "university": "ABC University",
+        "year": 2018
+      }
+    ],
+    "workExperience": [
+      {
+        "company": "Performing Arts Theater",
+        "position": "Performer",
+        "duration": 3,
+        "salary": 50000
+      },
+      {
+        "company": "Music Academy",
+        "position": "Music Teacher",
+        "duration": 4,
+        "salary": 60000
+      }
+    ]
+  }
+]

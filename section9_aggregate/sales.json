@@ -1,0 +1,202 @@
+[
+  {
+    "orderID": "1001",
+    "customerName": "Jane Smith",
+    "product": "Laptop",
+    "category": ["Electronics", "Computers"],
+    "quantity": 2,
+    "unitPrice": 999.99,
+    "totalPrice": 1999.98,
+    "date": "2023-07-01"
+  },
+  {
+    "orderID": "1002",
+    "customerName": "Jane Smith",
+    "product": "Smartphone",
+    "category": ["Electronics", "Phones"],
+    "quantity": 1,
+    "unitPrice": 799.99,
+    "totalPrice": 799.99,
+    "date": "2023-07-01"
+  },
+  {
+    "orderID": "1003",
+    "customerName": "Michael Johnson",
+    "product": "Headphones",
+    "category": ["Electronics", "Accessories"],
+    "quantity": 3,
+    "unitPrice": 89.99,
+    "totalPrice": 269.97,
+    "date": "2023-07-03"
+  },
+  {
+    "orderID": "1004",
+    "customerName": "Emily Williams",
+    "product": "Tablet",
+    "category": ["Electronics", "Tablets"],
+    "quantity": 1,
+    "unitPrice": 599.99,
+    "totalPrice": 599.99,
+    "date": "2023-07-04"
+  },
+  {
+    "orderID": "1005",
+    "customerName": "William Brown",
+    "product": "Tablet",
+    "category": ["Electronics", "Tablets"],
+    "quantity": 2,
+    "unitPrice": 499.99,
+    "totalPrice": 999.98,
+    "date": "2023-07-04"
+  },
+  {
+    "orderID": "1006",
+    "customerName": "Sophia Anderson",
+    "product": "Smartwatch",
+    "category": ["Electronics", "Wearables"],
+    "quantity": 1,
+    "unitPrice": 149.99,
+    "totalPrice": 149.99,
+    "date": "2023-07-06"
+  },
+  {
+    "orderID": "1007",
+    "customerName": "Daniel Lee",
+    "product": "Smartwatch",
+    "category": ["Electronics", "Wearables"],
+    "quantity": 1,
+    "unitPrice": 199.99,
+    "totalPrice": 199.99,
+    "date": "2023-07-07"
+  },
+  {
+    "orderID": "1008",
+    "customerName": "Olivia Wilson",
+    "product": "External Hard Drive",
+    "category": ["Electronics", "Storage"],
+    "quantity": 2,
+    "unitPrice": 119.99,
+    "totalPrice": 239.98,
+    "date": "2023-07-08"
+  },
+  {
+    "orderID": "1009",
+    "customerName": "James Martin",
+    "product": "Keyboard",
+    "category": ["Electronics", "Accessories"],
+    "quantity": 3,
+    "unitPrice": 39.99,
+    "totalPrice": 119.97,
+    "date": "2023-07-10"
+  },
+  {
+    "orderID": "1010",
+    "customerName": "James Martin",
+    "product": "Monitor",
+    "category": ["Electronics", "Monitors"],
+    "quantity": 1,
+    "unitPrice": 299.99,
+    "totalPrice": 299.99,
+    "date": "2023-07-10"
+  },
+  {
+    "orderID": "1011",
+    "customerName": "Alexander Wilson",
+    "product": "Mouse",
+    "category": ["Electronics", "Accessories"],
+    "quantity": 2,
+    "unitPrice": 19.99,
+    "totalPrice": 39.98,
+    "date": "2023-07-11"
+  },
+  {
+    "orderID": "1012",
+    "customerName": "Ava Thompson",
+    "product": "Speaker",
+    "category": ["Electronics", "Audio"],
+    "quantity": 1,
+    "unitPrice": 79.99,
+    "totalPrice": 79.99,
+    "date": "2023-07-12"
+  },
+  {
+    "orderID": "1013",
+    "customerName": "Noah Davis",
+    "product": "Game Console",
+    "category": ["Electronics", "Gaming"],
+    "quantity": 1,
+    "unitPrice": 349.99,
+    "totalPrice": 349.99,
+    "date": "2023-07-13"
+  },
+  {
+    "orderID": "1014",
+    "customerName": "Isabella Wilson",
+    "product": "Camera Lens",
+    "category": ["Electronics", "Accessories"],
+    "quantity": 2,
+    "unitPrice": 249.99,
+    "totalPrice": 499.98,
+    "date": "2023-07-14"
+  },
+  {
+    "orderID": "1015",
+    "customerName": "Ethan Anderson",
+    "product": "Tablet",
+    "category": ["Electronics", "Tablets"],
+    "quantity": 3,
+    "unitPrice": 29.99,
+    "totalPrice": 89.97,
+    "date": "2023-07-15"
+  },
+  {
+    "orderID": "1016",
+    "customerName": "Mia Hernandez",
+    "product": "Smartphone Case",
+    "category": ["Electronics", "Accessories"],
+    "quantity": 2,
+    "unitPrice": 14.99,
+    "totalPrice": 29.98,
+    "date": "2023-07-16"
+  },
+  {
+    "orderID": "1017",
+    "customerName": "Liam Lee",
+    "product": "Power Bank",
+    "category": ["Electronics", "Accessories"],
+    "quantity": 1,
+    "unitPrice": 49.99,
+    "totalPrice": 49.99,
+    "date": "2023-07-17"
+  },
+  {
+    "orderID": "1018",
+    "customerName": "Abigail Johnson",
+    "product": "Mouse",
+    "category": ["Electronics", "Accessories"],
+    "quantity": 2,
+    "unitPrice": 39.99,
+    "totalPrice": 79.98,
+    "date": "2023-07-20"
+  },
+  {
+    "orderID": "1019",
+    "customerName": "Mason Williams",
+    "product": "External SSD",
+    "category": ["Electronics", "Storage"],
+    "quantity": 1,
+    "unitPrice": 179.99,
+    "totalPrice": 179.99,
+    "date": "2023-07-20"
+  },
+  {
+    "orderID": "1020",
+    "customerName": "Elizabeth Brown",
+    "product": "Speaker",
+    "category": ["Electronics", "Audio"],
+    "quantity": 2,
+    "unitPrice": 79.99,
+    "totalPrice": 159.98,
+    "date": "2023-07-20"
+  }
+]

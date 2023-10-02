@@ -1,0 +1,53 @@
+
+1.Create directories
+/data/replica/rs1
+/data/replica/rs2
+/data/replica/rs3
+
+2.Make config files and put them in each folder.(/rs1, /rs2, /rs3)
+
+
+3.after configuring mongo_rs1.conf, mongo_rs2.conf, mongo_rs3.conf, execute below commands from cmd/terminal to start each DB instance
+
+>mongod --config rs1/mongo_rs1.conf
+>mongod --config rs2/mongo_rs2.conf
+>mongod --config rs3/mongo_rs3.conf
+
+This kind of error would be displayed continuously.
+*Cannot use non-local read concern until replica set is finished initializing
+ https://stackoverflow.com/questions/70081140/mongodb-replica-set-cannot-use-non-local-read-concern-until-replica-set-is-fin
+
+
+4.Execute below commands to connect to each DB instance from cmd/terminal.
+
+>mongosh --port 27001
+>mongosh --port 27002
+>mongosh --port 27003
+
+
+5.Initiate Replica Set. execute below at third prompt(27003).
+// JS command
+rs.initiate({
+  _id: "rs0",
+  members: [
+    { _id: 0, host: "127.0.0.1:27001" },
+    { _id: 1, host: "127.0.0.1:27002" },
+    { _id: 2, host: "127.0.0.1:27003" }
+  ]
+});
+
+// JS command
+rs.status();
+
+
+
+
+6.Other commands
+rs.add("localhost:27004");
+rs.addArb("localhost:27005");
+rs.remove("localhost:27005");
+
+// primary becomes secondary
+rs.stepDown();
+
+

@@ -1,0 +1,3 @@
+
+mongoimport products.js -d shops -c products --jsonArray --drop
+
